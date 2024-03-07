@@ -53,7 +53,7 @@ section.artigos{
 }
 
 section.artigos .flex{
-    gap: 60px;
+    justify-content: space-around;
 }
 
 .artigos .artigos-box{
@@ -62,6 +62,7 @@ section.artigos .flex{
     margin-top: 45px;
     border-radius: 20px;
     transition: .2s;
+    width: 500px;
 }
 
 .artigos .artigos-box:hover{
@@ -69,7 +70,8 @@ section.artigos .flex{
 }
 
 .artigos .artigos-box a{
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .artigos .artigos-box img{
@@ -142,23 +144,11 @@ section.sobre .flex{
 /* filmes */
 
 section.filmes{
-    padding: 80px 4%;
+    padding: 40px 4%;
 }
 
 section.filmes .flex{
     justify-content: space-around;
-}
-
-.filmes .interface h2{
-    color: #fff;
-    font-size: 36px; 
-    text-align: center;
-    margin-bottom: 60px;
-}
-  
-.filmes .interface h2 span{
-    color: #55BBCF;
-    font-weight: 900;
 }
 
 .img-filmes{
@@ -166,6 +156,7 @@ section.filmes .flex{
     grid-template-columns:  repeat(4,1fr);
     gap: 20px;
     text-align: center;
+    margin-top: 60px;
 }
 
 /* Diretores */
@@ -182,7 +173,7 @@ section.diretores .flex{
 .diretores .diretores-box{
     color: #fff;
     padding: 40px;
-    margin-top: 45px;
+    margin-top: 60px;
     border-radius: 20px;
     transition: .5s;
 }
@@ -198,7 +189,7 @@ section.diretores .flex{
 }
 
 .diretores .diretores-box img{
-    width: 100%;
+    width: 500px;
 }
 
 .diretores .diretores-box h3{
@@ -226,7 +217,7 @@ section.trilha .flex{
 
 .trilha .trilha-box{
     padding: 40px;
-    margin-top: 45px;
+    margin-top: 60px;
     border-radius: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -242,7 +233,7 @@ section.wallp{
 
 section.wallp .flex{
     gap: 60px;
-    margin-top: 45px;
+    margin-top: 60px;
 }
 
 .wallp .wallp-box{
@@ -258,4 +249,60 @@ section.wallp .flex{
 
 .wallp .wallp-box img:hover {
     transform: scale(90%);
+}
+
+/* Artigos */
+
+section.articles{
+    padding: 40px 4%;
+}
+
+section.articles .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.articles-box{
+    display: grid;
+    place-items: center;
+    gap: 30px;
+}
+
+.img-art {
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 12s;
+    border-radius: 40px;
+    cursor: default;
+    position: relative;
+}
+
+.img-art:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000c0;
+    border-radius: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+    padding: 20px;
+}
+
+.overlay:hover{
+    opacity: 1;
 }

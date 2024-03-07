@@ -1,0 +1,38 @@
+section.artigos1{
+    padding: 40px 20%;
+    margin-bottom: 20px;
+}
+
+section.artigos1 .flex{
+    margin-top: 60px;
+}
+
+.artigos1 .artigos1-content{
+    display: grid;
+    place-items: center;
+}
+
+.artigos1-content p{
+    text-align: justify;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.artigos1-content p1{
+    font-style: italic;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.artigos1-content h4{
+    font-size: 28px;
+    color: #55BBCF;
+    font-weight: 700;
+}
+
+.img-artigos1{
+    border-radius: 10px;
+    margin: 20px;
+}

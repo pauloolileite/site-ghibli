@@ -2,17 +2,13 @@
 @import url('./header.css');
 @import url('./main-index.css');
 @import url('./footer.css');
+@import url('./artigos.css');
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-}
-
-:root {
-  --cyan: #55BBCF;
-  --blue: #0367EB;
 }
 
 body {
