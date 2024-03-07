@@ -1,0 +1,80 @@
+header {
+    padding: 40px 4%;
+  }
+  
+  header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  header a{
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  header nav a:hover{
+    color: #fff;
+    transform: scale(1.1);
+    font-weight: 600;
+    transition: .2s;
+    background-color: #0367EB;
+    padding: 5px 12px;
+    border-radius: 20px;
+  }
+  
+  header nav ul{
+    list-style-type: none;
+  }
+  
+  header nav ul li{
+    display: inline;
+    padding: 0 10px;
+  }
+  
+  header .btn-contato {
+    transform: translate(-50%, 0%);
+    text-align: center;
+  }
+  
+  header .btn-contato button{
+    background: none;
+    border: 2px solid #0367EB;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 18px 40px;
+    min-width: 150px;
+    margin: 0px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+  }
+  
+  .btn-contato button:hover{
+    color: #fff;
+    font-weight: 600;
+    transition: .25s;
+  }
+  
+  .btn-contato::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #0367EB;
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  
+  .btn-contato::before{
+    transform: scaleX(0);
+  }
+  
+  .btn-contato:hover::before{
+    transform: scaleX(1);
+  }

@@ -1,0 +1,261 @@
+/* Estilo do topo */
+section.topo-do-site{
+    padding: 60px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    margin-left: 40px;
+
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 38px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: #55BBCF;
+    font-weight: 800;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 10px 0 40px 0;
+
+}
+
+.topo-do-site .img-topo-site{
+    margin-right: 120px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+    max-width: 300px;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 40px;
+    }
+}
+
+/* Estilo do artigos */
+section.artigos{
+    padding: 40px 4%;
+}
+
+section.artigos .flex{
+    gap: 60px;
+}
+
+.artigos .artigos-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .2s;
+}
+
+.artigos .artigos-box:hover{
+    box-shadow: 0 0 15px #55BBCF;
+}
+
+.artigos .artigos-box a{
+    align-items: center;
+}
+
+.artigos .artigos-box img{
+    max-width:100%;
+}
+
+.artigos .artigos-box h3{
+    font-size: 20px;
+    margin: 15px 0;
+    color: #fff;
+    text-align:left;
+}
+
+.artigos .artigos-box p{
+    margin-bottom: 20px;
+}
+
+.btn-chamada button{
+    padding: 10px 40px;
+    color: #fff;
+    font-size: 18px;
+    background-color: #0367EB;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn-chamada button:hover{
+    box-shadow: 0 0 8px #003c8b;
+    transform: scale(1.1);
+    font-weight: 500;
+    transition: 0.25s;
+}
+
+/* Estilo do sobre */
+section.sobre{
+    padding: 40px 4%;
+    margin-bottom: 80px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+section.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre .txt-sobre h2{
+    font-size: 45px;
+    line-height: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: #55BBCF;
+    display: block;
+    font-weight: 800;
+}
+
+.sobre .txt-sobre p{
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.sobre .img-sobre img{
+    max-width: 300px;
+}
+
+/* filmes */
+
+section.filmes{
+    padding: 80px 4%;
+}
+
+section.filmes .flex{
+    justify-content: space-around;
+}
+
+.filmes .interface h2{
+    color: #fff;
+    font-size: 36px; 
+    text-align: center;
+    margin-bottom: 60px;
+}
+  
+.filmes .interface h2 span{
+    color: #55BBCF;
+    font-weight: 900;
+}
+
+.img-filmes{
+    display: grid;
+    grid-template-columns:  repeat(4,1fr);
+    gap: 20px;
+    text-align: center;
+}
+
+/* Diretores */
+
+section.diretores{
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+section.diretores .flex{
+    gap: 60px;
+}
+
+.diretores .diretores-box{
+    color: #fff;
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.diretores .diretores-box:hover{
+    box-shadow: 0 0 15px #55BBCF;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    transform: scale(1.05);
+}
+
+.diretores .diretores-box a{
+    align-items: center;
+}
+
+.diretores .diretores-box img{
+    width: 100%;
+}
+
+.diretores .diretores-box h3{
+    font-size: 20px;
+    margin: 15px 0;
+    color: #55BBCF;
+    text-align: center;
+}
+
+.diretores .diretores-box p{
+    margin-bottom: 20px;
+}
+
+/* Trilha */
+
+section.trilha{
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+section.trilha .flex{
+    gap: 60px;
+    display: flex;
+}
+
+.trilha .trilha-box{
+    padding: 40px;
+    margin-top: 45px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+
+/* Fotos */
+
+section.wallp{
+    padding: 40px 4%;
+    margin-bottom: 20px;
+}
+
+section.wallp .flex{
+    gap: 60px;
+    margin-top: 45px;
+}
+
+.wallp .wallp-box{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.wallp .wallp-box img{
+    width: 100%;
+    transition: all 0.2s linear;
+}
+
+.wallp .wallp-box img:hover {
+    transform: scale(90%);
+}
